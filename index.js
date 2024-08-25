@@ -1,7 +1,7 @@
 import express from "express";
-import { PORT } from "./config.js";
-import { conexion } from "./db.js";
-import { unicornioRoute } from "./routes/unicornio.route.js";
+import { PORT } from "./src/config.js";
+import { conexion } from "./src/db.js";
+import { unicornioRoute } from "./src/routes/unicornio.route.js";
 
 const app = express();
 app.use(express.json());

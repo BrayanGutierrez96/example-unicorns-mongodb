@@ -3,7 +3,11 @@ import {createUnicorn, getUnicorns,getUnicorn,updateUnicorn, deleteUnicorn} from
 
 
 export const unicornioRoute = Router() 
-
+unicornioRoute.get('/',(req,res)=>{
+    res.send(
+        <h1>Hola mundo</h1>
+    )
+})
 unicornioRoute.get('/unicornios', getUnicorns);
 unicornioRoute.get('/unicornios/:unicornId', getUnicorn);
 unicornioRoute.post('/unicornios', createUnicorn);
